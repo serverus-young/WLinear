@@ -1,0 +1,710 @@
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 22:15:40       FITS            coal            720             192             0.6502          0.5555           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 22:15:18       WFT             coal            720             192             0.6082          0.5318           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 22:14:54       PatchTST        coal            720             192             0.7466          0.5936           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 22:07:41       FITS            coal            720             96              0.4587          0.4555           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 22:07:16       WFT             coal            720             96              0.4193          0.4305           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 22:07:03       PatchTST        coal            720             96              0.5023          0.4840           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 20:57:34       WFT             weather         720             96              0.1678          0.2211           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 19:12:03       FITS            weather         360             96              0.1756          0.2279           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 19:10:35       WFT             weather         360             96              0.1731          0.2238           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 16:08:36       WFT             electricity     360             192             0.1534          0.2473           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 16:04:05       WFT             Weather         360             192             0.2172          0.2605           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 16:01:37       WFT             ETTh1           360             192             0.4028          0.4115           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 16:00:51       WFT             Coal            360             96              0.3766          0.4042           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 16:00:26       WFT             Traffic         360             96              0.4100          0.2797           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 15:54:00       WFT             electricity     360             96              0.1400          0.2352           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 15:49:45       WFT             Weather         360             96              0.1727          0.2240           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-17 15:47:10       WFT             ETTh1           360             96              0.3705          0.3933           
+
+
+
+
+##############################################最好实验数据（各个数据集）######################################
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-01-02 16:30:36       WFT             electricity     96              192             0.1973          0.2772           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-01-02 16:27:42       WFT             electricity     96              96              0.1977          0.2743           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-31 17:20:39       WFT             ETTh1           360             96              0.3694          0.3915           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-31 17:19:39       WFT             ETTh1           360             96              0.3697          0.3919           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-24 10:31:29       WFT             ETTh1           360             96              0.3690          0.3913           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-24 10:29:58       WFT             ETTh1           360             96              0.3869          0.4127           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-24 10:29:02       WFT             ETTh1           360             96              0.3767          0.4023           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-24 10:28:17       WFT             ETTh1           360             96              0.3743          0.3989           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-24 10:27:26       FITS            ETTh1           360             96              0.3728          0.3950           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-23 13:18:25       FITS            ETTh1           360             96              0.3722          0.3947           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-23 13:10:01       WFT             ETTh1           360             96              0.3691          0.3914           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-23 13:08:49       WFT             ETTh1           360             96              0.3752          0.3977           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-23 13:07:55       WFT             ETTh1           360             96              0.3758          0.3978           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-23 12:55:26       WFT             ETTh1           360             96              0.3706          0.3932           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-23 12:51:26       WFT             ETTh1           192             96              0.3790          0.3938           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-23 12:49:28       WFT             ETTh1           360             96              0.3692          0.3913           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-23 12:48:17       WT2             ETTh1           360             96              0.3789          0.3998           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-23 12:42:55       WT2             ETTh1           720             96              0.3809          0.4040           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-23 12:42:07       WT2             ETTh1           720             96              0.3804          0.4034           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-23 12:41:17       WT2             ETTh1           720             96              0.3814          0.4042           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-23 12:40:31       WT2             ETTh1           720             96              0.3810          0.4040           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-23 12:39:42       WT2             ETTh1           720             96              0.3811          0.4048           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-23 12:38:56       WT2             ETTh1           720             96              0.3834          0.4089           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-23 12:38:15       WT2             ETTh1           720             96              0.4106          0.4313           
+
+
+
+
+##################################### FITS WFT ETTH1 look-back window = 360 ########################
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-04 15:00:48       FITS            ETTh1           360             720             0.4238          0.4459           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-04 15:00:11       WFT             ETTh1           360             720             0.4442          0.4589           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-04 14:59:33       FITS            ETTh1           360             336             0.4273          0.4267           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-04 14:58:56       WFT             ETTh1           360             336             0.4288          0.4282           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-04 14:58:08       FITS            ETTh1           360             192             0.4043          0.4127           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-04 14:57:31       WFT             ETTh1           360             192             0.4029          0.4116           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-04 14:56:48       FITS            ETTh1           360             96              0.3720          0.3944           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-12-04 14:56:09       WFT             ETTh1           360             96              0.3693          0.3919
+
+########################## FITS WFT weather上对比 提升约0.002#####################################
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 20:34:05       FITS            weather         720             720             0.3209          0.3400           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 20:31:54       WFT             weather         720             720             0.3198          0.3382           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 20:28:05       FITS            weather         720             336             0.2599          0.2964           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 20:26:12       WFT             weather         720             336             0.2575          0.2936           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 20:23:09       FITS            weather         720             192             0.2134          0.2610           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 20:21:02       WFT             weather         720             192             0.2105          0.2575           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 20:18:15       FITS            weather         720             96              0.1714          0.2265           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 20:16:37       WFT             weather         720             96              0.1681          0.2218           
+
+########################## FITS WFT traffic上对比  #####################################
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 19:46:48       FITS            traffic         720             720             0.4996          0.3697           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 19:24:19       WFT             traffic         720             720             0.4485          0.2984           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 19:06:05       FITS            traffic         720             336             0.4113          0.2878           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 18:50:54       WFT             traffic         720             336             0.4102          0.2781           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 18:38:15       FITS            traffic         720             192             0.3948          0.2736           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 18:26:21       WFT             traffic         720             192             0.3965          0.2709           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 18:13:20       FITS            traffic         720             96              0.3867          0.2705           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 18:01:46       WFT             traffic         720             96              0.3857          0.2686           
+
+######################################### FITS对比WFT electricity 数据集，有提升##################################
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 12:27:50       FITS            electricity     720             720             0.2082          0.3031           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 12:14:50       WFT             electricity     720             720             0.2031          0.2911           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 12:05:13       FITS            electricity     720             336             0.1652          0.2632           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-29 11:58:21       WFT             electricity     720             336             0.1638          0.2581           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE
+2024-11-28 19:39:01       FITS            electricity     720             192             0.1495          0.2456
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE
+2024-11-28 19:31:35       WFT             electricity     720             192             0.1475          0.2417
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE
+2024-11-28 19:24:38       FITS            electricity     720             96              0.1351          0.2322
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE
+2024-11-28 19:16:41       WFT             electricity     720             96              0.1333          0.2287
+
+######################################### FITS对比WFT ETTh2数据集，有提升##################################
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 14:17:55       FITS            ETTh2           720             720             0.3890          0.4328           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 14:17:27       WFT             ETTh2           720             720             0.3832          0.4288           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 14:16:45       FITS            ETTh2           720             336             0.3490          0.3973           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 14:16:19       WFT             ETTh2           720             336             0.3586          0.4006           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 14:15:41       FITS            ETTh2           720             192             0.3426          0.3855           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 14:15:17       WFT             ETTh2           720             192             0.3430          0.3816           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 14:14:39       FITS            ETTh2           720             96              0.2878          0.3506           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 14:14:19       WFT             ETTh2           720             96              0.2694          0.3348           
+
+
+################################   FITS和WTF对比 ETTm2 ################################
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 13:01:43       FITS            ETTm2            720             720             0.3514          0.3799
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 13:00:40       WFT             ETTm2            720             720             0.3497          0.3792
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 12:57:46       FITS            ETTm2            720             336             0.2725          0.3289
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 12:56:32       WFT             ETTm2            720             336             0.2671          0.3243
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 12:53:35       FITS            ETTm2            720             192             0.2207          0.2947
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 12:52:28       WFT             ETTm2            720             192             0.2164          0.2899
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 12:49:54       FITS            ETTm2            720             96              0.1659          0.2569
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 12:49:04       WFT             ETTm2            720             96              0.1634          0.2523
+
+################################   FITS和WTF对比 ETTm1 ################################
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 12:38:01       FITS            ETTm1           720             720             0.4136          0.4106           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 12:36:39       WFT             ETTm1           720             720             0.4193          0.4137           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 12:33:55       FITS            ETTm1           720             336             0.3655          0.3847           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 12:32:52       WFT             ETTm1           720             336             0.3648          0.3839           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 12:29:55       FITS            ETTm1           720             192             0.3378          0.3682           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 12:28:55       WFT             ETTm1           720             192             0.3397          0.3687           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 12:26:21       FITS            ETTm1           720             96              0.3099          0.3525           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-28 12:25:25       WFT             ETTm1           720             96              0.3123          0.3539           
+
+
+################################   FITS和WTF对比 ETTh1 ################################
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-27 17:17:58       FITS            ETTh1           720             720             0.4502          0.4730           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-27 17:17:25       WFT             ETTh1           720             720             0.4633          0.4743           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-27 17:16:46       FITS            ETTh1           720             336             0.4503          0.4552           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-27 17:16:17       WFT             ETTh1           720             336             0.4459          0.4427           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-27 17:15:34       FITS            ETTh1           720             192             0.4350          0.4432           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-27 17:14:56       WFT             ETTh1           720             192             0.4137          0.4221           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-27 17:14:11       FITS            ETTh1           720             96              0.4022          0.4248           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2024-11-27 17:13:27       WFT             ETTh1           720             96              0.3775          0.4009           
+
+
+
+##########################以上为新生成的结果向上写入###################################
+
+实验简介: MACs: 8543797248.0, Params: 3751008.0  Average Inference Time on GPU: 0.003409 seconds
+Time                      Model           pred_len        MSE             MAE
+2024-10-11 21:00:11       PatchTST        96              0.3985          0.4146
+
+
+实验简介: 设置学习率调整策略为指数衰减
+Time                      Model           pred_len        MSE             MAE
+2024-10-11 21:05:19       PatchTST        96              0.3968          0.4157
+
+
+实验简介: 普通Transformer
+Time                      Model           pred_len        MSE             MAE
+2024-10-11 21:14:25       Transformer     96              0.6425          0.6057
+
+
+实验简介: patch2 注意力矩阵为（12×7）即patch数量×变量 MACs: 811466752.0, Params: 3309152.0 Average Inference Time on GPU: 0.001872 seconds
+Time                      Model           pred_len        MSE             MAE
+2024-10-12 08:39:50       Patch2          96              0.4214          0.4336
+
+
+
+实验简介:
+Time                      Model           pred_len        MSE             MAE
+2024-10-15 09:08:24       iTrans          96              0.3917          0.4085
+
+
+实验简介: TimesNet
+Time                      Model           pred_len        MSE             MAE
+2024-10-18 19:47:24       TimesNet        96              0.3913          0.4131
+
+实验简介:  TimesNet改
+Time                      Model           pred_len        MSE             MAE
+2024-10-27 16:23:55       TimesNet        96              0.4253          0.4355
+
+
+实验简介: TimesNet改  Average Inference Time on GPU: 0.008213 seconds MACs: 5485780992.0, Params: 357511.0
+Time                      Model           pred_len        MSE             MAE
+2024-10-27 16:26:34       TimesNet        96              0.3963          0.4166
+
+
+
+实验简介:正常TimesNet Average Inference Time on GPU: 0.007427 seconds MACs: 5445132288.0, Params: 357511.0
+Time                      Model           pred_len        MSE             MAE
+2024-10-27 20:06:33       TimesNet        96              0.3989          0.4197
+
+
+实验简介: TimesNet改  Average Inference Time on GPU: 0.007541 seconds
+Time                      Model           pred_len        MSE             MAE
+2024-10-28 11:03:56       TimesNet2       96              0.3924          0.4132
+
+
+实验简介: 192 k=1 学习到周期为24 k=5会浪费资源。
+Time                      Model           pred_len        MSE             MAE
+2024-10-28 17:11:01       TimesNet2       96              0.4028          0.4218
+
+
+实验简介: 192 k=5 学习到的五个周期会变化第一次学到4和24周边，第二次学到（15和24周边），所以k=5没有什么意义
+Time                      Model           pred_len        MSE             MAE
+2024-10-29 09:16:44       TimesNet2       96              0.4369          0.4418
+
+
+实验简介: 192 经过趋势分解之后，明显能学习到周期特征24,不经过趋势分解就可能学习到其他的周期。
+Time                      Model           pred_len        MSE             MAE
+2024-10-29 10:17:13       TimesNet        96              0.4575          0.4442
+
+
+实验简介:
+Time                      Model           pred_len        MSE             MAE
+2024-10-29 10:51:10       TimesNet2       96              0.5601          0.5423
+
+
+实验简介: m1数据集
+Time                      Model           pred_len        MSE             MAE
+2024-10-29 11:08:40       TimesNet2       96              0.3673          0.3992
+
+
+实验简介: m1数据集
+Time                      Model           pred_len        MSE             MAE
+2024-10-29 11:41:01       TimesNet        96              0.3148          0.3664
+
+
+实验简介: pacthsize 24
+Time                      Model           pred_len        MSE             MAE
+2024-10-30 11:14:27       PatchTST        96              0.3838          0.4038
+
+
+实验简介: patchsize 16
+Time                      Model           pred_len        MSE             MAE
+2024-10-30 11:16:26       PatchTST        96              0.3975          0.4127
+
+
+实验简介: 192 patchsize 16
+Time                      Model           pred_len        MSE             MAE
+2024-10-30 11:25:22       PatchTST        96              0.2986          0.3459
+
+
+实验简介: 192 patchsize 96 按周期分patch并不能改善
+Time                      Model           pred_len        MSE             MAE
+2024-10-30 11:29:47       PatchTST        96              0.3153          0.3533
+
+
+实验简介: m1 数据集,k = 5 证明去趋势没有作用。
+Time                      Model           pred_len        MSE             MAE
+2024-10-30 14:36:25       TimesNet2       96              0.3227          0.3685
+
+
+实验简介: acforperiod 不起作用
+Time                      Model           pred_len        MSE             MAE
+2024-10-31 15:00:17       TimesNet2       96              0.4323          0.4389
+
+
+实验简介: 多周期稀疏模型：MACs: 1462272.0, Params: 32.0
+Time                      Model           pred_len        MSE             MAE
+2024-11-04 15:53:21       FITS            96              0.3794          0.3891
+
+
+
+##################### WFT 实验  ###########
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:32:55       WFT             custom          96              96              640000.0        5100.0          0.0001          0.4166          0.4299
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:33:10       WFT             custom          96              96              640000.0        5100.0          0.0005          0.3692          0.4012
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:33:24       WFT             custom          96              96              640000.0        5100.0          0.0010          0.3583          0.3941
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:33:39       WFT             custom          96              96              640000.0        5100.0          0.0015          0.3564          0.3921
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:33:52       WFT             custom          96              96              640000.0        5100.0          0.0020          0.3574          0.3924
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:34:10       WFT             custom          96              96              640000.0        5100.0          0.0025          0.3505          0.3885
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:34:27       WFT             custom          96              96              640000.0        5100.0          0.0030          0.3511          0.3889
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:48:27       WFT             ETTh1           96              96              560000.0        5100.0          0.0001          0.4285          0.4302
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:48:51       WFT             ETTh1           96              96              560000.0        5100.0          0.0005          0.3910          0.3988
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:49:13       WFT             ETTh1           96              96              560000.0        5100.0          0.0010          0.3871          0.3952
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:49:40       WFT             ETTh1           96              96              560000.0        5100.0          0.0015          0.3852          0.3931
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:50:03       WFT             ETTh1           96              96              560000.0        5100.0          0.0020          0.3855          0.3930
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:50:25       WFT             ETTh1           96              96              560000.0        5100.0          0.0025          0.3887          0.3952
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:50:58       WFT             ETTh1           96              96              560000.0        5100.0          0.0030          0.3841          0.3921
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:53:25       WFT             ETTh1           96              96              560000.0        5100.0          0.0035          0.3841          0.3920
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:53:49       WFT             ETTh1           96              96              560000.0        5100.0          0.0040          0.3863          0.3932
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:54:15       WFT             ETTh1           96              96              560000.0        5100.0          0.0045          0.3854          0.3931
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:54:39       WFT             ETTh1           96              96              560000.0        5100.0          0.0050          0.3878          0.3953
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 21:55:03       WFT             ETTh1           96              96              560000.0        5100.0          0.0100          0.3913          0.3974
+
+
+########### FITS 实验  #############
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 22:47:31       FITS            custom          96              96              102400.0        840.0           0.0006          0.3560          0.3942
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 22:51:36       FITS            ETTh1           96              96              89600.0         840.0           0.0006          0.3907          0.3984
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 22:54:49       FITS            ETTh1           96              96              89600.0         840.0           0.0005          0.3905          0.3982
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 22:55:57       FITS            ETTh1           96              96              89600.0         840.0           0.0030          0.3911          0.3994
+
+################################ FITS 和 WTF 分别取最优的学习率学习 WTF明显有所提升 ##############################
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 23:13:05       WFT             ETTh1           96              96              560000.0        5100.0          0.0030          0.3845          0.3928
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 23:13:31       WFT             ETTh1           96              96              560000.0        5100.0          0.0030          0.3851          0.3929
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 23:13:50       WFT             ETTh1           96              96              560000.0        5100.0          0.0030          0.3870          0.3947
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 23:14:14       WFT             ETTh1           96              96              560000.0        5100.0          0.0030          0.3854          0.3933
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 23:14:37       WFT             ETTh1           96              96              560000.0        5100.0          0.0030          0.3860          0.3935
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 23:14:59       WFT             ETTh1           96              96              560000.0        5100.0          0.0030          0.3878          0.3955
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 23:19:24       FITS            ETTh1           96              96              89600.0         840.0           0.0005          0.3912          0.3989
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 23:19:49       FITS            ETTh1           96              96              89600.0         840.0           0.0005          0.3906          0.3984
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 23:20:15       FITS            ETTh1           96              96              89600.0         840.0           0.0005          0.3911          0.3992
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 23:20:42       FITS            ETTh1           96              96              89600.0         840.0           0.0005          0.3912          0.3992
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 23:21:08       FITS            ETTh1           96              96              89600.0         840.0           0.0005          0.3910          0.3985
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-22 23:21:34       FITS            ETTh1           96              96              89600.0         840.0           0.0005          0.3911          0.3992
+
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-23 10:45:57       WFT             ETTh1           720             96              4054400.0       36300.0         0.0030          0.3787          0.4010
+
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-23 10:52:20       FITS            ETTh1           720             96              49280.0         462.0           0.0030          0.7025          0.5618
+
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-23 10:59:27       FITS            ETTh1           720             96              653184.0        5913.0          0.0005          0.4018          0.4243
+
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-23 11:00:54       WFT             ETTh1           720             96              4054400.0       36300.0         0.0005          0.3795          0.4034
+
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-23 16:13:15       WFT             ETTh1           720             96              4054400.0       36300.0         0.0005          0.3854          0.4101
+
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-24 13:28:27       WFT             ETTh1           720             96              16217600.0      36300.0         0.0030          0.3778          0.4015
+
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-24 13:29:08       WFT             ETTh1           720             96              16217600.0      36300.0         0.0030          0.3781          0.4020
+
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len        macs            params          lr              MSE             MAE
+2024-11-24 14:01:54       PatchTST        ETTh1           720             96              64078479360.0   7584864.0       0.0001          0.4288          0.4458

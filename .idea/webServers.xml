@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f3ebb819-ac58-4d14-b393-08d71000162c" name="Ytrans_2080">
+        <fileTransfer accessType="SFTP" host="192.168.1.104" port="22" sshConfigId="338223ae-aac3-4aff-8e0a-dcd5ba959030" sshConfig="young@192.168.1.104:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
