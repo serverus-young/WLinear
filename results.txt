@@ -1,3 +1,940 @@
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs             params           MSE             MAE             
+2025-02-26 22:39:30       WFT        electricity 128        16         720        720        661835232.0     129718.0       0.2036          0.2922           
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 22:32:28       WFT        electricity 64         64         720        720        1342386048.0 66134.0   0.2104     0.3009      
+
+######################################################################################################################################
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE
+2025-02-26 22:27:13       WFT        electricity 64         32         720        720        671193024.0 66134.0   0.2104     0.3004      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 22:21:54       WFT        electricity 64         16         720        720        335596512.0 66134.0   0.2102     0.3005      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 22:16:31       WFT        electricity 32         64         720        720        689908608.0 34342.0   0.2251     0.3149      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 22:10:49       WFT        electricity 32         32         720        720        344954304.0 34342.0   0.2218     0.3116      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 22:05:31       WFT        electricity 32         16         720        720        172477152.0 34342.0   0.2222     0.3110      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 21:59:38       WFT        electricity 256        64         360        720        4528760448.0 221426.0  0.2078     0.2954      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 21:54:20       WFT        electricity 256        32         360        720        2264380224.0 221426.0  0.2093     0.2972      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 21:49:59       WFT        electricity 256        16         360        720        1132190112.0 221426.0  0.2091     0.2961      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 21:44:28       WFT        electricity 128        64         360        720        2273851008.0 111538.0  0.2110     0.3000      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 21:41:05       WFT        electricity 128        32         360        720        1136925504.0 111538.0  0.2103     0.2990      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 21:37:09       WFT        electricity 128        16         360        720        568462752.0 111538.0  0.2102     0.2979      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 21:32:37       WFT        electricity 64         64         360        720        1146396288.0 56594.0   0.2148     0.3034      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 21:28:32       WFT        electricity 64         32         360        720        573198144.0 56594.0   0.2147     0.3028      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 21:23:50       WFT        electricity 64         16         360        720        286599072.0 56594.0   0.2143     0.3023      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 21:18:52       WFT        electricity 32         64         360        720        582668928.0 29122.0   0.2287     0.3165      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 21:15:09       WFT        electricity 32         32         360        720        291334464.0 29122.0   0.2278     0.3155      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 21:11:38       WFT        electricity 32         16         360        720        145667232.0 29122.0   0.2243     0.3114      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 21:06:39       WFT        electricity 256        64         720        360        3363915648.0 164366.0  0.1663     0.2611      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 21:01:18       WFT        electricity 256        32         720        360        1681957824.0 164366.0  0.1670     0.2610      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 20:56:05       WFT        electricity 256        16         720        360        840978912.0 164366.0  0.1674     0.2618      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 20:50:38       WFT        electricity 128        64         720        360        1700673408.0 83278.0   0.1683     0.2644      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 20:46:30       WFT        electricity 128        32         720        360        850336704.0 83278.0   0.1693     0.2650      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 20:42:33       WFT        electricity 128        16         720        360        425168352.0 83278.0   0.1686     0.2642      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 20:37:35       WFT        electricity 64         64         720        360        869052288.0 42734.0   0.1747     0.2719      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 20:33:21       WFT        electricity 64         32         720        360        434526144.0 42734.0   0.1750     0.2717      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 20:29:24       WFT        electricity 64         16         720        360        217263072.0 42734.0   0.1736     0.2697      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 20:24:29       WFT        electricity 32         64         720        360        453241728.0 22462.0   0.1888     0.2852      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 20:18:52       WFT        electricity 32         32         720        360        226620864.0 22462.0   0.1867     0.2827      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 20:14:33       WFT        electricity 32         16         720        360        113310432.0 22462.0   0.1868     0.2825      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 20:10:05       WFT        electricity 256        64         360        360        2635425408.0 128906.0  0.1739     0.2689      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 20:07:38       WFT        electricity 256        32         360        360        1317712704.0 128906.0  0.1735     0.2669      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 20:04:20       WFT        electricity 256        16         360        360        658856352.0 128906.0  0.1730     0.2660      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:59:34       WFT        electricity 128        64         360        360        1327183488.0 65098.0   0.1738     0.2685      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:56:20       WFT        electricity 128        32         360        360        663591744.0 65098.0   0.1742     0.2680      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:52:45       WFT        electricity 128        16         360        360        331795872.0 65098.0   0.1747     0.2689      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:49:10       WFT        electricity 64         64         360        360        673062528.0 33194.0   0.1793     0.2744      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:45:56       WFT        electricity 64         32         360        360        336531264.0 33194.0   0.1800     0.2747      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:42:58       WFT        electricity 64         16         360        360        168265632.0 33194.0   0.1799     0.2748      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:39:22       WFT        electricity 32         64         360        360        346002048.0 17242.0   0.1925     0.2874      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:36:11       WFT        electricity 32         32         360        360        173001024.0 17242.0   0.1906     0.2851      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:32:55       WFT        electricity 32         16         360        360        86500512.0 17242.0   0.1897     0.2841      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:29:21       WFT        electricity 256        64         720        192        2480359296.0 121190.0  0.1481     0.2428      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:25:37       WFT        electricity 256        32         720        192        1240179648.0 121190.0  0.1473     0.2414      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:20:38       WFT        electricity 256        16         720        192        620089824.0 121190.0  0.1475     0.2416      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:15:41       WFT        electricity 128        64         720        192        1258895232.0 61606.0   0.1501     0.2462      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:12:20       WFT        electricity 128        32         720        192        629447616.0 61606.0   0.1486     0.2435      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:07:45       WFT        electricity 128        16         720        192        314723808.0 61606.0   0.1486     0.2438      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 19:03:16       WFT        electricity 64         64         720        192        648163200.0 31814.0   0.1557     0.2526      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:58:54       WFT        electricity 64         32         720        192        324081600.0 31814.0   0.1550     0.2514      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:55:03       WFT        electricity 64         16         720        192        162040800.0 31814.0   0.1552     0.2527      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:50:59       WFT        electricity 32         64         720        192        342797184.0 16918.0   0.1707     0.2678      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:47:40       WFT        electricity 32         32         720        192        171398592.0 16918.0   0.1679     0.2644      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:43:07       WFT        electricity 32         16         720        192        85699296.0 16918.0   0.1670     0.2639      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:38:37       WFT        electricity 256        64         360        192        1751869056.0 85730.0   0.1543     0.2489      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:36:35       WFT        electricity 256        32         360        192        875934528.0 85730.0   0.1531     0.2466      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:33:18       WFT        electricity 256        16         360        192        437967264.0 85730.0   0.1531     0.2466      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:29:11       WFT        electricity 128        64         360        192        885405312.0 43426.0   0.1554     0.2506      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:26:57       WFT        electricity 128        32         360        192        442702656.0 43426.0   0.1544     0.2487      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:24:12       WFT        electricity 128        16         360        192        221351328.0 43426.0   0.1542     0.2486      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:20:46       WFT        electricity 64         64         360        192        452173440.0 22274.0   0.1602     0.2558      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:18:20       WFT        electricity 64         32         360        192        226086720.0 22274.0   0.1592     0.2547      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:14:49       WFT        electricity 64         16         360        192        113043360.0 22274.0   0.1590     0.2548      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:11:22       WFT        electricity 32         64         360        192        235557504.0 11698.0   0.1735     0.2693      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:08:56       WFT        electricity 32         32         360        192        117778752.0 11698.0   0.1730     0.2689      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:06:43       WFT        electricity 32         16         360        192        58889376.0 11698.0   0.1699     0.2655      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:03:36       WFT        electricity 256        64         720        96         1975469952.0 96518.0   0.1335     0.2294      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 18:00:10       WFT        electricity 256        32         720        96         987734976.0 96518.0   0.1331     0.2283      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:55:34       WFT        electricity 256        16         720        96         493867488.0 96518.0   0.1332     0.2283      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:50:34       WFT        electricity 128        64         720        96         1006450560.0 49222.0   0.1342     0.2305      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:47:29       WFT        electricity 128        32         720        96         503225280.0 49222.0   0.1333     0.2288      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:42:55       WFT        electricity 128        16         720        96         251612640.0 49222.0   0.1342     0.2304      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:39:07       WFT        electricity 64         64         720        96         521940864.0 25574.0   0.1357     0.2325      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:35:46       WFT        electricity 64         32         720        96         260970432.0 25574.0   0.1360     0.2329      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:32:33       WFT        electricity 64         16         720        96         130485216.0 25574.0   0.1356     0.2323      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:28:22       WFT        electricity 32         64         720        96         279686016.0 13750.0   0.1477     0.2466      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:25:01       WFT        electricity 32         32         720        96         139843008.0 13750.0   0.1446     0.2425      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:21:09       WFT        electricity 32         16         720        96         69921504.0 13750.0   0.1449     0.2433      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:17:00       WFT        electricity 256        64         360        96         1246979712.0 61058.0   0.1396     0.2346      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:14:15       WFT        electricity 256        32         360        96         623489856.0 61058.0   0.1400     0.2356      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:11:34       WFT        electricity 256        16         360        96         311744928.0 61058.0   0.1408     0.2367      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:08:41       WFT        electricity 128        64         360        96         632960640.0 31042.0   0.1405     0.2363      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:06:34       WFT        electricity 128        32         360        96         316480320.0 31042.0   0.1404     0.2358      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:04:21       WFT        electricity 128        16         360        96         158240160.0 31042.0   0.1400     0.2355      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 17:00:56       WFT        electricity 64         64         360        96         325951104.0 16034.0   0.1419     0.2383      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 16:58:15       WFT        electricity 64         32         360        96         162975552.0 16034.0   0.1412     0.2373      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 16:55:09       WFT        electricity 64         16         360        96         81487776.0 16034.0   0.1415     0.2376      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 16:52:02       WFT        electricity 32         64         360        96         172446336.0 8530.0    0.1524     0.2503      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 16:49:56       WFT        electricity 32         32         360        96         86223168.0 8530.0    0.1519     0.2494      
+
+Time                      Model      Data       batch_size d_model    seq_len    pred_len    Macs        params      MSE        MAE        
+2025-02-26 16:47:44       WFT        electricity 32         16         360        96         43111584.0 8530.0    0.1514     0.2489
+
+#########################################################################################################################################
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 16:28:17       xiaorong        1               elec            720             192             599556096.0     117056.0       0.1480          0.2426           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 16:23:27       WFT             1               elec            720             192             314723808.0     61606.0        0.1483          0.2431           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 16:17:47       WFT             1               elec            720             192             162040800.0     31814.0        0.1549          0.2524           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 16:01:01       WFT             1               elec            720             192             162040800.0     31814.0        0.1579          0.2554           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 15:18:56       FITS            1               elec            720             96              594954240.0     116202.0       0.1363          0.2343           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 15:08:54       WFT             1               elec            720             96              130485216.0     25574.0        0.1351          0.2317           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 15:02:43       xiaorong        1               elec            720             96              536444928.0     104672.0       0.1341          0.2301           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 14:58:55       WFT             1               elec            720             96              251612640.0     49222.0        0.1333          0.2288           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 14:43:15       WFT             1               elec            360             96              162975552.0     16034.0        0.1455          0.2439           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:39:00       FITS            1               elec            96              720             338072064.0     4301.0         0.2648          0.3456           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:33:57       xiaorong        1               elec            96              720             2145779712.0    26864.0        0.2699          0.3479           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:30:31       WFT             1               elec            96              720             2041251840.0    25596.0        0.2737          0.3514           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:26:25       WFT             1               elec            96              720             4010681856.0    49598.0        0.2593          0.3350           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:21:11       WFT             1               elec            360             192             152811008.0     85730.0        0.3987          0.4090           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:20:41       WFT             1               elec            360             192             77231616.0      43426.0        0.3981          0.4099           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:20:23       WFT             1               elec            360             336             110261760.0     62002.0        0.3972          0.4182           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:20:10       WFT             1               elec            360             336             110261760.0     62002.0        0.4006          0.4218           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:19:58       WFT             1               elec            360             336             120121344.0     67500.0        0.3981          0.4185           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:19:37       WFT             1               elec            360             336             60060672.0      67500.0        0.4232          0.4301           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:19:05       WFT             1               elec            360             336             60712960.0      34284.0        0.4009          0.4214           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:18:45       WFT             1               elec            360             336             120121344.0     67500.0        0.3991          0.4204           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:18:11       WFT             1               elec            360             336             238938112.0     133932.0       0.3992          0.4186           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:17:40       WFT             1               elec            360             720             415098880.0     232620.0       0.4360          0.4529           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:16:40       WFT             1               elec            360             720             395032064.0     221426.0       0.4333          0.4522           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:14:31       WFT             1               elec            360             720             24689504.0      221426.0       0.4403          0.4561           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:13:25       WFT             1               elec            360             720             25943680.0      232620.0       0.4440          0.4596           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:12:24       WFT             1               elec            360             720             13012608.0      117036.0       0.4394          0.4558           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:11:26       WFT             1               elec            360             720             12396384.0      111538.0       0.4390          0.4558           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:10:24       WFT             1               elec            360             96              3450720.0       31042.0        0.3678          0.3906           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:08:58       WFT             1               elec            360             96              4066944.0       36540.0        0.3680          0.3907           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:07:28       WFT             1               elec            360             96              4066944.0       36540.0        0.3678          0.3905           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:06:07       WFT             1               elec            360             96              3450720.0       31042.0        0.3677          0.3907           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 11:05:25       WFT             1               elec            360             96              3450720.0       31042.0        0.3682          0.3910           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 10:31:50       WFT             1               elec            360             96              4066944.0       36540.0        0.3681          0.3908           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 10:30:57       xiaorong        1               elec            360             96              6537216.0       58592.0        0.3695          0.3922           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 10:30:30       xiaorong        1               elec            360             96              6537216.0       58592.0        0.3736          0.3958           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 10:29:31       xiaorong        1               elec            360             96              3870720.0       34656.0        0.3689          0.3912           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 10:28:29       xiaorong        1               elec            96              96              2064384.0       9312.0         0.3966          0.4019           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 10:27:39       xiaorong        1               elec            360             96              7741440.0       34656.0        0.3696          0.3918           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 10:17:42       WFT             1               elec            720             96              20670720.0      155724.0       0.1402          0.1881           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 09:45:25       WFT             1               elec            96              96              6413568.0       134508.0       0.1621          0.2050           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 09:38:16       WFT             1               elec            720             96              20670720.0      155724.0       0.1404          0.1885           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-26 09:35:05       xiaorong        1               elec            720             96              35094528.0      177184.0       0.1407          0.1890           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 16:18:58       WFT             1               elec            720             96              20670720.0      155724.0       0.1405          0.1887           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 16:14:21       WFT             2               elec            720             96              51636480.0      1138524.0      0.1409          0.1888           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 15:51:56       FITS            2               elec            720             96              2534784.0       160356.0       0.1444          0.1963           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:57:07       WFT             2               elec            360             96              7348992.0       11412.0        0.1740          0.2261           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:51:49       WFT             2               elec            360             96              18945024.0      21636.0        0.3660          0.3940           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:51:24       WFT             2               elec            360             96              18945024.0      21636.0        0.3667          0.3950           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:50:53       WFT             2               elec            360             96              18945024.0      21636.0        0.3631          0.3921           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:50:24       WFT             2               elec            360             96              18945024.0      21636.0        0.3645          0.3929           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:49:57       WFT             2               elec            360             96              18945024.0      21636.0        0.3696          0.3983           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:49:31       WFT             2               elec            360             96              37237760.0      42084.0        0.3638          0.3917           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:49:02       WFT             2               elec            360             96              73823232.0      82980.0        0.3673          0.3940           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:48:35       WFT             2               elec            360             96              146994176.0     164772.0       0.3702          0.3957           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:48:10       WFT             2               elec            360             96              146994176.0     164772.0       0.3706          0.3956           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:47:39       WFT             2               elec            360             96              37237760.0      42084.0        0.3629          0.3906           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:47:15       WFT             2               elec            360             96              37237760.0      42084.0        0.3636          0.3912           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:46:51       WFT             2               elec            360             96              37237760.0      42084.0        0.3633          0.3906           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:37:55       WFT             1               elec            360             96              16593920.0      18684.0        0.3650          0.3924           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:37:37       WFT             1               elec            360             96              16593920.0      18684.0        0.3662          0.3939           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:37:13       WFT             1               elec            360             96              8623104.0       9756.0         0.3669          0.3958           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:36:58       WFT             1               elec            360             96              8623104.0       9756.0         0.3731          0.4020           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:36:46       WFT             1               elec            360             96              8623104.0       9756.0         0.3652          0.3943           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:35:59       WFT             1               elec            360             96              16593920.0      18684.0        0.3655          0.3925           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:35:44       WFT             1               elec            360             96              16593920.0      18684.0        0.3643          0.3915           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:35:27       WFT             1               elec            360             96              16593920.0      18684.0        0.3646          0.3919           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:35:11       WFT             1               elec            360             96              16593920.0      18684.0        0.3652          0.3924           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:33:13       WFT             1               elec            360             96              16593920.0      18684.0        0.3669          0.3952           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:32:59       WFT             1               elec            360             96              16593920.0      18684.0        0.3669          0.3952           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:32:45       WFT             1               elec            360             96              16593920.0      18684.0        0.3669          0.3952           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:30:57       WFT             2               ETTh1           360             96              37237760.0      42084.0        0.3685          0.3953           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:30:33       WFT             2               ETTh1           360             96              37237760.0      42084.0        0.3630          0.3906           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:30:04       WFT             2               ETTh1           360             96              37237760.0      42084.0        0.3632          0.3909           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:29:37       WFT             1               ETTh1           360             96              37237760.0      42084.0        0.3651          0.3924           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:29:22       WFT             1               ETTh1           360             96              37237760.0      42084.0        0.3648          0.3923           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:29:06       WFT             1               ETTh1           360             96              37237760.0      42084.0        0.3674          0.3948           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:24:27       WFT             2               ETTh1           360             96              37237760.0      42084.0        0.3638          0.3913           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:24:01       WFT             1               ETTh1           360             96              37237760.0      42084.0        0.3644          0.3917           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:23:44       WFT             0               ETTh1           360             96              37237760.0      42084.0        0.3766          0.4022           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:18:06       WFT             2               elec            360             96              37237760.0      42084.0        0.3651          0.3925           
+
+Time                      Model           train_mode      Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-25 14:17:44       WFT             2               elec            360             96              37237760.0      42084.0        0.3646          0.3922           
+
+
+############################################## 小波变换2 + 微调实验#############################################################################
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 11:08:52       WFT             elec            360             96              33187840.0      18684.0        0.3641          0.3935           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE
+2025-02-24 11:08:18       WFT             elec            360             96              65071104.0      36540.0        0.3620          0.3904
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 11:07:14       FITS            elec            360             96              43029504.0      24186.0        0.3623          0.3885           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 11:06:01       WFT             elec            360             96              128837632.0     72252.0        0.3628          0.3902           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 11:05:15       WFT             elec            360             192             172877824.0     96924.0        0.4015          0.4116           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:58:59       WFT             elec            360             192             344451072.0     192924.0       0.3998          0.4100           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:58:25       WFT             elec            360             336             476571648.0     266796.0       0.3991          0.4178           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:57:43       WFT             elec            360             192             344451072.0     192924.0       0.4043          0.4129           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:51:28       WFT             elec            360             720             828893184.0     463788.0       0.4380          0.4546           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:50:39       WFT             elec            360             96              256370688.0     143676.0       0.3621          0.3889           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:50:12       WFT             elec            360             96              256370688.0     143676.0       0.3697          0.3971           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:49:44       WFT             elec            360             720             414446592.0     463788.0       0.4378          0.4552           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:46:48       WFT             elec            360             720             3749838848.0    4178132.0      0.4415          0.4569           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:46:14       WFT             elec            360             720             7499677696.0    4178132.0      0.4406          0.4577           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:45:18       WFT             elec            360             720             817954816.0     455252.0       0.4428          0.4574           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:44:47       WFT             elec            360             96              674824192.0     374756.0       0.3727          0.3979           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:29:45       WFT             elec            360             720             472901632.0     264984.0       0.4404          0.4565           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:29:08       WFT             elec            360             96              65873920.0      36600.0        0.3673          0.3944           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:27:46       WFT             elec            360             336             222423040.0     124440.0       0.4036          0.4222           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:10:21       WFT             elec            360             336             110888960.0     62220.0        0.5352          0.4680           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:09:49       WFT             elec            360             336             110888960.0     62220.0        0.4047          0.4230           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:05:32       WFT             elec            360             720             236128256.0     132492.0       0.4392          0.4543           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-24 10:04:00       WFT             elec            360             96              32614400.0      18300.0        0.3648          0.3915           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 16:40:55       FITS            coal            720             720             1051852800.0    205440.0       0.2041          0.2938           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 16:35:09       WFT             electricity     720             720             1346083968.0    262812.0       0.2034          0.2915           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 16:28:54       FITS            coal            720             360             788889600.0     154080.0       0.1682          0.2638           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 16:24:17       WFT             electricity     720             360             676760448.0     132132.0       0.1675          0.2617           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 16:19:09       FITS            coal            720             192             665625600.0     130005.0       0.1488          0.2445           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 16:14:32       WFT             electricity     720             192             364409472.0     71148.0        0.1473          0.2413           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 16:09:10       FITS            coal            720             96              594954240.0     116202.0       0.1351          0.2323           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 16:05:22       WFT             electricity     720             96              185923200.0     36300.0        0.1336          0.2293           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:49:44       WFT             ETTh1           360             720             236128256.0     132492.0       0.4395          0.4552           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:49:14       FITS            ETTh1           360             720             102380544.0     57546.0        0.4169          0.4391           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:48:13       FITS            ETTh1           360             192             52179456.0      29329.0        0.3996          0.4087           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:47:37       WFT             ETTh1           360             192             63924224.0      35868.0        0.4002          0.4100           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:46:02       WFT             ETTh1           720             192             7946624.0       71148.0        0.4133          0.4216           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:42:49       WFT             ETTh1           720             192             127145984.0     71148.0        0.4120          0.4212           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:42:19       WFT             ETTh1           336             192             59709440.0      33516.0        0.4030          0.4116           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:41:43       WFT             ETTh1           336             96              30464000.0      17100.0        0.3658          0.3907           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:40:54       WFT             ETTh1           336             96              30464000.0      17100.0        0.3682          0.3938           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:39:53       WFT             ETTh1           336             96              30464000.0      17100.0        0.3739          0.3980           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:38:28       FITS            ETTh1           336             96              38904320.0      21877.0        0.3642          0.3890           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:37:39       FITS            ETTh1           336             96              9726080.0       21877.0        0.3723          0.3935           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:34:50       FITS            ETTh1           336             96              38904320.0      21877.0        0.3645          0.3895           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:33:52       FITS            ETTh1           336             96              38904320.0      21877.0        0.3641          0.3892           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:33:03       WFT             ETTh1           336             96              30464000.0      17100.0        0.3648          0.3907           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:31:37       WFT             ETTh1           336             96              30464000.0      17100.0        0.3680          0.3928           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:31:12       WFT             ETTh1           336             96              29679104.0      16660.0        0.3692          0.3948           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:30:51       WFT             ETTh1           336             96              29679104.0      16660.0        0.3652          0.3908           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:28:45       WFT             ETTh1           336             96              30464000.0      17100.0        0.3648          0.3905           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:28:21       WFT             ETTh1           336             96              30464000.0      17100.0        0.3695          0.3952           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:27:41       WFT             ETTh1           300             96              27238400.0      15300.0        0.3682          0.3924           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:26:56       WFT             ETTh1           720             96              64870400.0      36300.0        0.3739          0.4007           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:24:32       WFT             ETTh1           360             96              32614400.0      18300.0        0.3647          0.3910           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:24:00       WFT             ETTh1           360             96              32614400.0      18300.0        0.3677          0.3938           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 15:20:02       WFT             ETTh1           360             96              32614400.0      18300.0        0.3661          0.3924           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 14:15:21       FITS            ETTh1           720             720             14910336.0      133644.0       0.4348          0.4559           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 14:13:17       FITS            ETTh1           720             720             8605184.0       77224.0        0.4377          0.4583           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 14:12:15       WFT             ETTh1           720             720             29353856.0      262812.0       0.4641          0.4750           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 10:48:03       WFT             ETTh1           360             96              4076800.0       36500.0        0.3709          0.3929           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 10:46:07       WFT             ETTh1           360             96              4076800.0       36500.0        0.3799          0.4006           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 10:24:05       WFT             ETTh1           360             96              1798272.0       16200.0        0.3725          0.3945           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 10:23:22       WFT             ETTh1           360             96              1798272.0       16200.0        0.3728          0.3949           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 09:10:11       WFT             ETTh1           360             96              2038400.0       18300.0        0.3691          0.3914           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 09:08:55       WFT             ETTh1           360             96              2038400.0       18300.0        0.3791          0.4041           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-22 09:07:37       WFT             ETTh1           360             96              1581664.0       14226.0        0.3744          0.3978           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-21 20:08:58       WFT             ETTh1           360             96              1581664.0       14226.0        0.3748          0.3959           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-21 20:07:29       WFT             ETTh1           360             96              1581664.0       14226.0        0.3691          0.3913           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-21 20:05:44       WFT             ETTh1           360             96              1019200.0       9150.0         0.3889          0.4042           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-21 19:51:56       WFT             ETTh1           360             96              1581664.0       14226.0        0.3691          0.3913           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-21 19:50:18       WFT             ETTh1           360             96              1581664.0       14226.0        0.3700          0.3918           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-20 15:40:42       WFT             ETTh1           360             96              2038400.0       18300.0        0.3705          0.3923           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-20 15:40:05       WFT             ETTh1           360             96              2038400.0       18300.0        0.3766          0.3987           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-20 15:39:12       WFT             ETTh1           360             96              3046400.0       18325.0        0.3706          0.3929           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-20 15:36:38       WFT             ETTh1           360             96              24541440.0      210757.0       0.3690          0.3913           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-20 15:35:20       WFT             ETTh1           360             96              24541440.0      210757.0       0.3697          0.3921           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-20 15:17:38       WFT             ETTh1           360             96              47044480.0      421164.0       0.3683          0.3911           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-20 15:14:13       WFT             ETTh1           360             96              23533440.0      210732.0       0.3763          0.3973           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-20 15:13:13       WFT             ETTh1           720             96              44177280.0      395052.0       0.3735          0.3974           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-20 15:05:57       WFT             ETTh1           360             96              1453760.0       9454.0         0.3919          0.4171           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-20 11:36:03       WFT             ETTh1           360             96              23533440.0      210732.0       0.3685          0.3915           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-20 11:19:11       Sparse          ETTh1           360             96              161280.0        60.0           0.3668          0.3845           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-20 11:01:59       Sparse          ETTh1           720             96              322560.0        120.0          0.3718          0.3895           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-20 10:40:09       FITS            ETTh1           720             96              4873344.0       43734.0        0.3789          0.4015           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         Macs             params           MSE             MAE             
+2025-02-20 10:36:52       FITS            ETTh1           720             96              12974080.0      116202.0       0.3752          0.3984           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-19 15:58:50       WT2             ETTh1           360             96              0.3708          0.3925           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-19 15:33:11       WT2             ETTh1           360             96              0.3774          0.3990           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-19 15:30:39       WT2             ETTh1           360             96              0.3730          0.3983           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-19 15:26:25       WT2             ETTh1           360             96              0.3705          0.3931           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-19 14:00:19       WFT             ETTh1           360             96              0.3713          0.3974           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-19 13:38:28       WFT             ETTh1           360             96              0.3689          0.3917           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-19 13:37:08       WFT             ETTh1           336             96              0.3721          0.3927           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-19 13:36:24       WFT             ETTh1           720             96              0.3761          0.3989           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-19 13:29:23       FITS            ETTh1           360             96              0.3718          0.3942           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-19 13:28:49       WFT             ETTh1           360             96              0.3717          0.3939           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-19 13:20:53       FITS            ETTh1           720             96              0.3785          0.4015           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-19 13:20:24       WFT             ETTh1           720             96              0.3766          0.3994           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-19 13:18:08       WFT             ETTh1           96              96              0.3853          0.3930           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-19 13:11:15       FITS            coal            720             96              0.1348          0.2318           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-19 13:06:57       WFT             electricity     720             96              0.1342          0.2308           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-18 11:41:16       FITS            electricity     96              720             0.2555          0.3276           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-18 11:30:24       WFT             electricity     96              720             0.2535          0.3247           
+
+实验简介:
+Time                      Model           Data            seq_len         pred_len         MSE             MAE             
+2025-02-18 11:10:52       WT2             ETTh1           720             96              0.3773          0.4011           
+
 实验简介:
 Time                      Model           Data            seq_len         pred_len         MSE             MAE             
 2025-02-17 22:15:40       FITS            coal            720             192             0.6502          0.5555           

@@ -18,6 +18,7 @@ from model.TimesNet import TimesNet
 from model.Sparse import Sparse
 from model.WFT import WFT
 from model.WT2 import WT2
+from model.xiaorong import xiaorong
 from model.TimesNet2 import TimesNet2
 from utils.tools import EarlyStopping , adjust_learning_rate, save_results
 from utils.metric import metric
@@ -26,12 +27,6 @@ from thop import profile
 from model.FITS import FITS
 import matplotlib.pyplot as plt
 from statsmodels.tsa.stattools import acf
-
-# fix_seed = 2024
-# random.seed(fix_seed)
-# torch.manual_seed(fix_seed)
-# np.random.seed(fix_seed)
-
 import argparse
 
 
@@ -47,12 +42,12 @@ def get_args():
     parser.add_argument('--pred_len', type=int, default=96, help='Prediction sequence length')
     parser.add_argument('--freq', type=str, default='h', help='Frequency for time-series data')
     parser.add_argument('--task', type=str, default='forecast', help='Task type (e.g., forecast, classification)')
-    parser.add_argument('--features', type=str, default='MS',
-                        help='Feature type (M for univariate, MS for multivariate)')
+    parser.add_argument('--features', type=str, default='M',
+                        help='forecasting task, options:[M, S, MS]; M:multivariate predict multivariate, S:univariate predict univariate, MS:multivariate predict univariate')
 
     # 模型相关参数
     parser.add_argument('--model', type=str, default='WFT', help='Model name')
-    parser.add_argument('--d_model', type=int, default=16, help='Dimension of the model')
+    parser.add_argument('--d_model', type=int, default=512, help='Dimension of the model')
     parser.add_argument('--d_ff', type=int, default=32, help='Dimension of feed-forward network')
     parser.add_argument('--n_heads', type=int, default=8, help='Number of attention heads')
     parser.add_argument('--ff_type', type=str, default='conv', help='Feed-forward type (e.g., dense, conv)')
@@ -76,16 +71,24 @@ def get_args():
     parser.add_argument('--epoch', type=int, default=20, help='Number of training epochs')
     parser.add_argument('--patience', type=int, default=5, help='Early stopping patience')
     parser.add_argument('--verbose', type=bool, default=True, help='Verbose output during training')
-    parser.add_argument('--save_results', type=bool, default=True, help='save_results')
-
+    parser.add_argument('--save_results', type=int, default=1, help='save_results')
+    parser.add_argument('--is_training', type=int, default=1, help='save_results')
     # 设备相关参数
-    parser.add_argument('--device', type=int, default=0, help='GPU device index (0 for the first GPU)')
+    parser.add_argument('--device', type=int, default=1, help='GPU device index (0 for the first GPU)')
     parser.add_argument('--checkpoint_path', type=str, default='./checkpoint', help='Path to save model checkpoints')
+    parser.add_argument('--seed', type=int, default='817', help='seed')
+    parser.add_argument('--set_seed', type=int, default=0, help='set seed')
 
     # FITS
     parser.add_argument('--cut_freq', type=int, default=0, help='Path to save model checkpoints')
     parser.add_argument('--H_order', type=int, default=6, help='Path to save model checkpoints')
     parser.add_argument('--base_T', type=int, default=24, help='Path to save model checkpoints')
+    parser.add_argument('--individual', action='store_true', default=False,
+                        help='DLinear: a linear layer for each variate(channel) individually')
+    #WFT
+    parser.add_argument('--level',type=int, default=1, help='level of wavelet')
+    # Finetune
+    parser.add_argument('--train_mode', type=int, default=0, help='Finetune')
     # 解析参数
     args = parser.parse_args()
     return args
@@ -139,18 +142,40 @@ class Long_term_Forcast():
             'Sparse':Sparse,
             'WFT':WFT,
             'WT2':WT2,
-            'FITS':FITS
+            'FITS':FITS,
+            'xiaorong':xiaorong
         }
         model_class = model_dict.get(self.args.model,  Transformer)
         model = model_class(self.args).float()
         return model
 
+    # def _visualize_predictions(true, pred, index=0):
+    #     """
+    #     可视化pred和true的对比，其中true为绿色，pred为红色
+    #     :param true: 真实值 (numpy array)，形状为 (batch_size, l, n)
+    #     :param pred: 预测值 (numpy array)，形状为 (batch_size, l, n)
+    #     :param index: 可视化的批次索引
+    #     """
+    #     # 选取某一个批次的(1, l, 1)的向量, 选择 index 为要可视化的批次
+    #     true_values = true[index, :, 0]  # 取第 index 批次的 (l, 1) 这一列
+    #     pred_values = pred[index, :, 0]  # 同上
+    #
+    #     # 创建可视化图像
+    #     plt.figure(figsize=(10, 6))
+    #     plt.plot(true_values, color='green', label='True', linewidth=2)
+    #     plt.plot(pred_values, color='red', label='Pred', linestyle='dashed', linewidth=2)
+    #     plt.title(f'Prediction vs True for index {index}')
+    #     plt.xlabel('Time Steps')
+    #     plt.ylabel('Values')
+    #     plt.legend()
+    #     plt.grid(True)
+    #     plt.show()
     def test(self,args):
         test_data, test_loader = self._get_data(args,'test',shuffle=False)
         print('testing', len(test_data))
-        print('loading model')
-        filepath = os.path.join(args.checkpoint_path, self.args.model + '_' + self.args.data + '_' + str(self.args.seq_len) + '_' + str(
+        filepath = os.path.join(args.checkpoint_path, self.args.model + '_' + self.args.Data + '_' + str(self.args.seq_len) + '_' + str(
             self.args.pred_len) + '_' + 'ckpt_best.pth')
+        print('loading model:',filepath)
         self.model.load_state_dict(torch.load(filepath, weights_only=True),strict=False)
         self.model.eval()
 
@@ -160,7 +185,7 @@ class Long_term_Forcast():
         batch_y = batch_y.to(self.device)
         batch_y_stamp = batch_y_stamp.to(self.device)
         inputs = (batch_x, batch_x_stamp, batch_y, batch_y_stamp)
-        self.measure_inference_time_on_gpu(self.model, inputs)
+        # self.measure_inference_time_on_gpu(self.model, inputs)
         # 所有的数据累加起来一起算loss
         pred = []
         true = []
@@ -169,13 +194,13 @@ class Long_term_Forcast():
                 # loader 里面的数据已经进过StandardScale，将全部数据转换为正态分布了。
                 batch_x = batch_x.float().to(self.args.device)
                 batch_x_stamp = batch_x_stamp.to(self.args.device)
-                batch_y = batch_y.to(self.args.device)
+                batch_y = batch_y.float().to(self.args.device)
                 batch_y_stamp = batch_y_stamp.to(self.args.device)
 
                 dec_inp = torch.zeros_like(batch_y[:, -self.args.pred_len:, :]).float()
                 dec_inp = torch.cat([batch_y[:, :self.args.label_len, :], dec_inp], dim=1).float().to(self.device)
 
-                output= self.model(batch_x,batch_x_stamp,dec_inp,batch_y_stamp)
+                output= self.model(batch_x,batch_x_stamp,batch_y,batch_y_stamp)
 
                 output = output[:, -self.args.pred_len:, :]
                 batch_y = batch_y[:, -self.args.pred_len:, :]
@@ -197,10 +222,10 @@ class Long_term_Forcast():
             print('MSE:{}, MAE:{}'.format(MSE, MAE))
             macs, params = profile(self.model, inputs=inputs)
             print(f"MACs: {macs}, Params: {params}")
-            if args.save_results is True:
-                save_results(args, MSE, MAE, macs, params, 'results.txt')
+            if args.save_results:
+                save_results(args, MSE, MAE, macs, params)
 
-    def train(self):
+    def train(self,ft=False):
         # 1.加载数据集，打印数据集长度，保存训练开始时间
 
         train_start_time = time.time()
@@ -210,10 +235,14 @@ class Long_term_Forcast():
         print('train:',len(train_data),'val:',len(val_data),'test:',len(test_data))
         total_steps = len(train_data)// self.args.batch_size
 
-        x = torch.randn(16,96,7).to(self.device)
-        y = torch.randn(16, 144,7).to(self.device)
-        x_stamp = torch.randn(16,96,4).to(self.device)
-        y_stamp = torch.randn(16, 144,4).to(self.device)
+        x, x_stamp, y, y_stamp = next(iter(test_loader))
+        x = x.float().to(self.device)
+        x_stamp = x_stamp.to(self.device)
+        y = y.to(self.device)
+        y_stamp = y_stamp.to(self.device)
+        inputs = (x, x_stamp, y, y_stamp)
+        macs, params = profile(self.model, inputs=inputs)
+        print(f"MACs: {macs}, Params: {params}")
 
         # 2.设置优化器，损失函数，回调函数（早停，调整学习率，保存检查点）init已经实现过了
         checkpoint_path = self.args.checkpoint_path
@@ -230,19 +259,26 @@ class Long_term_Forcast():
                 for i,(batch_x,batch_x_stamp,batch_y,batch_y_stamp) in  enumerate(train_loader):
                     batch_x = batch_x.float().to(self.device)
                     batch_x_stamp = batch_x_stamp.float().to(self.device)
-                    batch_y = batch_y.float().to(self.device)
+                    batch_y = batch_y.float().to(self.device)[:, -self.args.pred_len:, :]
                     batch_y_stamp = batch_y_stamp.float().to(self.device)
-
+                    batch_xy = torch.cat([batch_x,batch_y],dim=1)
                     # 注意不能把batch_y直接丢进decoder,要把预测的部分赋0
                     dec_inp = torch.zeros_like(batch_y[:, -self.args.pred_len:, :]).float()
                     dec_inp = torch.cat([batch_y[:, :self.args.label_len, :], dec_inp], dim=1).float().to(self.device)
 
                     self.optimizer.zero_grad()
-                    output= self.model(batch_x,batch_x_stamp,dec_inp,batch_y_stamp)
-                    # print(periods)
-                    output = output[:, -self.args.pred_len:, :]
-                    batch_y = batch_y[:, -self.args.pred_len:, :]
-                    loss = self.criterion(output,batch_y)
+                    outputs= self.model(batch_x,batch_x_stamp,dec_inp,batch_y_stamp)
+                    f_dim = -1 if self.args.features == 'MS' else 0
+                    if ft:
+                        outputs = outputs[:, -self.args.pred_len:, f_dim:]
+                        batch_y = batch_y[:, -self.args.pred_len:, f_dim:].to(self.device)
+                        # print(outputs.shape,batch_xy.shape)
+                        # loss = criterion(outputs, batch_xy)
+                        loss = self.criterion(outputs, batch_y)
+                    else:
+                        outputs = outputs[:, :, f_dim:]
+                        # batch_y = batch_y[:, -self.args.pred_len:, f_dim:].to(self.device) #???
+                        loss = self.criterion(outputs, batch_xy[:,:,f_dim:])
                     pbar.update(1)
                     train_loss.append(loss.item())
                     # loss.backward() 用于计算梯度，而 model_optim.step() 则根据这些梯度更新模型参数
@@ -290,20 +326,35 @@ if __name__ == "__main__":
     args = get_args()
     if args.cut_freq == 0:
         args.cut_freq = int(args.seq_len // args.base_T + 1) * args.H_order + 10
-    exp = Long_term_Forcast(args)
+    fix_seed = args.seed
+    if args.set_seed:
+        random.seed(fix_seed)
+        torch.manual_seed(fix_seed)
+        np.random.seed(fix_seed)
+    torch.cuda.empty_cache()
     print('>>>>>>>model parameter>>>>>>>>>>>>>>>>>>>>>>>>>>')
     params = [(key, getattr(args, key)) for key in dir(args)
               if not key.startswith('__') and not callable(getattr(args, key))]
-
     # 使用 tabulate 打印单列表格
     print(tabulate(params, headers=['Parameter', 'Value'], colalign=("left", "center"), tablefmt='fancy_grid'))
-    print('>>>>>>>start training >>>>>>>>>>>>>>>>>>>>>>>>>>')
-    time_train_start = time.time()
-    exp.train()
-    time_train_end = time.time()
-    print('>>>>total training time:', time_train_end - time_train_start)
-    print('>>>>>>>start testing >>>>>>>>>>>>>>>>>>>>>>>>>>')
-    exp.test(args)
+    exp = Long_term_Forcast(args)
+    if args.is_training:
+        print('>>>>>>>start training >>>>>>>>>>>>>>>>>>>>>>>>>>')
+        time_train_start = time.time()
+        if args.train_mode == 0:
+            exp.train(ft=False) # train on xy
+        elif args.train_mode == 1:
+            exp.train(ft=True) # train on y
+        elif args.train_mode == 2:
+            exp.train(ft=False)
+            exp.train(ft=True) # finetune
+        time_train_end = time.time()
+        print('>>>>total training time:', time_train_end - time_train_start)
+        print('>>>>>>>start testing >>>>>>>>>>>>>>>>>>>>>>>>>>')
+        exp.test(args)
+    else:
+        print('>>>>>>>start testing >>>>>>>>>>>>>>>>>>>>>>>>>>')
+        exp.test(args)
 
 
 

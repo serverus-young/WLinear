@@ -1,0 +1,213 @@
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 18:08:07       WFT        0.003      128        64         360        720        1.0        56594.0        0.3299          0.3424           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 18:07:14       WFT        0.003      64         64         360        720        0.0        56594.0        0.3309          0.3417           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 18:05:39       WFT        0.003      32         64         360        720        0.0        56594.0        0.3305          0.3414           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 18:03:24       WFT        0.003      128        512        720        360        8.0        326542.0       0.2645          0.2989           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 18:02:10       WFT        0.003      64         512        720        360        4.0        326542.0       0.2643          0.2993           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 18:00:42       WFT        0.003      32         512        720        360        2.0        326542.0       0.2627          0.2974           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:57:54       WFT        0.003      128        256        720        360        4.0        164366.0       0.2636          0.2979           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:56:39       WFT        0.003      64         256        720        360        2.0        164366.0       0.2630          0.2973           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:54:42       WFT        0.003      32         256        720        360        1.0        164366.0       0.2631          0.2975           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:51:38       WFT        0.003      128        128        720        360        2.0        83278.0        0.2648          0.2990           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:50:22       WFT        0.003      64         128        720        360        1.0        83278.0        0.2629          0.2974           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:48:35       WFT        0.003      32         128        720        360        0.0        83278.0        0.2630          0.2973           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:45:42       WFT        0.003      128        64         720        360        1.0        42734.0        0.2619          0.2964           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:44:29       WFT        0.003      64         64         720        360        0.0        42734.0        0.2650          0.2994           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:42:42       WFT        0.003      32         64         720        360        0.0        42734.0        0.2634          0.2980           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:39:34       WFT        0.003      128        512        360        360        6.0        256522.0       0.2706          0.2993           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:38:18       WFT        0.003      64         512        360        360        3.0        256522.0       0.2697          0.2987           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:36:54       WFT        0.003      32         512        360        360        1.0        256522.0       0.2697          0.2984           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:34:39       WFT        0.003      128        256        360        360        3.0        128906.0       0.2711          0.2994           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:33:32       WFT        0.003      64         256        360        360        1.0        128906.0       0.2715          0.2999           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:31:55       WFT        0.003      32         256        360        360        0.0        128906.0       0.2708          0.2993           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:29:21       WFT        0.003      128        128        360        360        1.0        65098.0        0.2709          0.2994           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:28:07       WFT        0.003      64         128        360        360        0.0        65098.0        0.2701          0.2988           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:26:42       WFT        0.003      32         128        360        360        0.0        65098.0        0.2709          0.2996           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:24:09       WFT        0.003      128        64         360        360        0.0        33194.0        0.2708          0.2996           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:23:18       WFT        0.003      64         64         360        360        0.0        33194.0        0.2706          0.3004           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:22:10       WFT        0.003      32         64         360        360        0.0        33194.0        0.2699          0.2985           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:19:36       WFT        0.003      128        512        720        192        6.0        240358.0       0.2128          0.2593           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:18:06       WFT        0.003      64         512        720        192        3.0        240358.0       0.2105          0.2582           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:16:46       WFT        0.003      32         512        720        192        1.0        240358.0       0.2098          0.2568           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:14:16       WFT        0.003      128        256        720        192        3.0        121190.0       0.2119          0.2587           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:13:01       WFT        0.003      64         256        720        192        1.0        121190.0       0.2118          0.2585           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:06:08       WFT        0.003      64         128        720        192        0.0        61606.0        0.2111          0.2577           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:04:15       WFT        0.003      32         128        720        192        0.0        61606.0        0.2111          0.2579           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 17:01:39       WFT        0.003      128        64         720        192        0.0        31814.0        0.2136          0.2613           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:57:01       WFT        0.003      128        512        360        192        4.0        170338.0       0.2175          0.2610           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:55:55       WFT        0.003      64         512        360        192        2.0        170338.0       0.2171          0.2608           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:54:21       WFT        0.003      32         512        360        192        1.0        170338.0       0.2162          0.2595           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:51:42       WFT        0.003      128        256        360        192        2.0        85730.0        0.2176          0.2617           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:50:52       WFT        0.003      64         256        360        192        1.0        85730.0        0.2171          0.2605           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:49:17       WFT        0.003      32         256        360        192        0.0        85730.0        0.2165          0.2601           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:46:19       WFT        0.003      128        128        360        192        1.0        43426.0        0.2177          0.2608           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:45:18       WFT        0.003      64         128        360        192        0.0        43426.0        0.2173          0.2603           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:43:40       WFT        0.003      32         128        360        192        0.0        43426.0        0.2166          0.2599           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:40:43       WFT        0.003      128        64         360        192        0.0        22274.0        0.2172          0.2603           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:39:42       WFT        0.003      64         64         360        192        0.0        22274.0        0.2167          0.2601           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:38:04       WFT        0.003      32         64         360        192        0.0        22274.0        0.2171          0.2607           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:35:45       WFT        0.003      128        512        720        96         5.0        191110.0       0.1689          0.2223           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:34:17       WFT        0.003      64         512        720        96         2.0        191110.0       0.1689          0.2227           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:32:54       WFT        0.003      32         512        720        96         1.0        191110.0       0.1662          0.2190           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:30:36       WFT        0.003      128        256        720        96         2.0        96518.0        0.1692          0.2227           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:29:14       WFT        0.003      64         256        720        96         1.0        96518.0        0.1684          0.2231           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:27:38       WFT        0.003      32         256        720        96         0.0        96518.0        0.1681          0.2218           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:25:03       WFT        0.003      128        128        720        96         1.0        49222.0        0.1675          0.2208           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:23:46       WFT        0.003      64         128        720        96         0.0        49222.0        0.1670          0.2205           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:22:20       WFT        0.003      32         128        720        96         0.0        49222.0        0.1678          0.2213           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:19:52       WFT        0.003      128        64         720        96         0.0        25574.0        0.1699          0.2234           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:18:35       WFT        0.003      64         64         720        96         0.0        25574.0        0.1672          0.2203           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:16:50       WFT        0.003      32         64         720        96         0.0        25574.0        0.1677          0.2209           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:14:59       WFT        0.003      128        512        360        96         3.0        121090.0       0.1731          0.2237           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:14:02       WFT        0.003      64         512        360        96         1.0        121090.0       0.1723          0.2228           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:12:22       WFT        0.003      32         512        360        96         0.0        121090.0       0.1730          0.2240           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:09:32       WFT        0.003      128        256        360        96         1.0        61058.0        0.1747          0.2263           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:09:03       WFT        0.003      64         256        360        96         0.0        61058.0        0.1741          0.2254           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:07:46       WFT        0.003      32         256        360        96         0.0        61058.0        0.1733          0.2245           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:05:18       WFT        0.003      128        128        360        96         0.0        31042.0        0.1733          0.2243           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:04:23       WFT        0.003      64         128        360        96         0.0        31042.0        0.1716          0.2217           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:03:04       WFT        0.003      32         128        360        96         0.0        31042.0        0.1753          0.2266           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:01:15       WFT        0.003      128        64         360        96         0.0        16034.0        0.1733          0.2238           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 16:00:16       WFT        0.003      64         64         360        96         0.0        16034.0        0.1746          0.2257           
+
+Time                      Model       lr        batch_size d_model    seq_len    pred_len    Macs        params           MSE             MAE             
+2025-02-27 15:58:48       WFT        0.003      32         64         360        96         0.0        16034.0        0.1735          0.2242           
+

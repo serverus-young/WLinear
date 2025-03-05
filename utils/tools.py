@@ -33,7 +33,7 @@ class EarlyStopping(object):
                 self.early_stop = True
     def save_checkpoint(self, model,path):
         # 添加地址最好使用os.path.join
-        filepath = os.path.join(path,self.args.model+'_'+ self.args.data+'_' + str(self.args.seq_len)+'_'+str(self.args.pred_len)+'_'+'ckpt_best.pth')
+        filepath = os.path.join(path,self.args.model+'_'+ self.args.Data+'_' + str(self.args.seq_len)+'_'+str(self.args.pred_len)+'_'+'ckpt_best.pth')
         torch.save(model.state_dict(),filepath)
         if self.verbose:
             print('Saving checkpoint to',filepath)
@@ -47,6 +47,8 @@ def adjust_learning_rate(args,epoch,optimizer):
         epoch_lr = {epoch:args.lr if epoch < 3 else args.lr *  (0.8 ** ((epoch - 3) // 1))}
     elif args.adjust_lr_type == 'type3':
         epoch_lr = {epoch: args.lr * (0.95 ** ((epoch - 1) // 1))}
+    elif args.adjust_lr_type == 'type4':
+        epoch_lr = {epoch: args.lr if epoch < 3 else args.lr * (0.9 ** ((epoch - 3) // 1))}
     if epoch in epoch_lr.keys():
         lr = epoch_lr[epoch]
         # betas:Adam 优化器使用一阶和二阶动量估计来调整学习率。betas 是一个元组 (beta1, beta2)，分别表示一阶和二阶动量的衰减率。
@@ -66,28 +68,22 @@ import os
 from datetime import datetime
 
 
-def save_results(args, mse, mae, macs, params, file_name):
-    # 准备数据，包含你想保存的 `args` 参数
-    result = {
-        'Model': args.model,
-        'seq_len': args.seq_len,
-        'pred_len': args.pred_len,
-        'MSE': mse,
-        'MAE': mae,
-        'lr': args.lr
-    }
+def save_results(args, mse, mae, macs, params):
+    # 根据 args.data 来定义文件名
+    file_name = f"{args.Data.lower()}_results.txt"  # 使用 args.Data 来构建文件名，转换为小写
+
+    # 获取当前时间戳
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     # 定义表头和格式化的行输出
-    header = "{:<25} {:<15} {:<15} {:<15} {:<15}  {:<15} {:<15} \n".format(
-        'Time', 'Model', 'Data', 'seq_len', 'pred_len', 'MSE', 'MAE'
+    header = "{:<25} {:<10}  {:<10}{:<10} {:<10} {:<10} {:<10}  {:<10}  {:<15}  {:<15} {:<15} \n".format(
+        'Time', 'Model', 'lr', 'batch_size', 'd_model', 'seq_len', 'pred_len', 'Macs', 'params', 'MSE', 'MAE'
     )
 
-    row = "{:<25} {:<15} {:<15} {:<15} {:<15} {:<15,.4f} {:<15,.4f}  \n".format(
-        timestamp, args.model, args.Data, args.seq_len, args.pred_len, mse, mae
+    row = "{:<25} {:<10} {:<10} {:<10} {:<10} {:<10} {:<10} {:<10} {:<15}{:<15,.4f} {:<15,.4f}  \n".format(
+        timestamp, args.model, args.lr, args.batch_size, args.d_model, args.seq_len, args.pred_len,
+        macs // 100000000, params, mse, mae
     )
-
-    custom_message = f"实验简介:\n"
 
     # 如果文件存在，先读取原始内容
     if os.path.isfile(file_name):
@@ -97,7 +93,7 @@ def save_results(args, mse, mae, macs, params, file_name):
         original_content = ""  # 文件不存在时，原始内容为空
 
     # 生成新的内容，将其拼接在原始内容之前
-    new_content = custom_message + header + row + "\n" + original_content
+    new_content = header + row + "\n" + original_content
 
     # 写入文件，覆盖原内容
     with open(file_name, 'w') as f:

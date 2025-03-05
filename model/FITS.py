@@ -12,10 +12,18 @@ class FITS(nn.Module):
         self.seq_len = configs.seq_len
         self.pred_len = configs.pred_len
         self.channels = configs.e_in
-
+        self.individual = configs.individual
         self.dominance_freq=configs.cut_freq # 720/24
         self.length_ratio = (self.seq_len + self.pred_len)/self.seq_len
-        self.freq_upsampler = nn.Linear(self.dominance_freq, int(self.dominance_freq*self.length_ratio)).to(torch.cfloat) # complex layer for frequency upcampling]
+        if self.individual:
+            self.freq_upsampler = nn.ModuleList()
+            for i in range(self.channels):
+                self.freq_upsampler.append(
+                    nn.Linear(self.dominance_freq, int(self.dominance_freq * self.length_ratio)).to(torch.cfloat))
+
+        else:
+            self.freq_upsampler = nn.Linear(self.dominance_freq, int(self.dominance_freq * self.length_ratio)).to(
+                torch.cfloat)  # complex layer for frequency upcampling]
         # configs.pred_len=configs.seq_len+configs.pred_len
         # #self.Dlinear=DLinear.Model(configs)
         # configs.pred_len=self.pred_len
@@ -33,7 +41,14 @@ class FITS(nn.Module):
         low_specx[:,self.dominance_freq:]=0 # LPF
         low_specx = low_specx[:,0:self.dominance_freq,:] # LPF
         # print(low_specx.permute(0,2,1))
-        low_specxy_ = self.freq_upsampler(low_specx.permute(0,2,1)).permute(0,2,1)
+        if self.individual:
+            low_specxy_ = torch.zeros(
+                [low_specx.size(0), int(self.dominance_freq * self.length_ratio), low_specx.size(2)],
+                dtype=low_specx.dtype).to(low_specx.device)
+            for i in range(self.channels):
+                low_specxy_[:, :, i] = self.freq_upsampler[i](low_specx[:, :, i].permute(0, 1)).permute(0, 1)
+        else:
+            low_specxy_ = self.freq_upsampler(low_specx.permute(0, 2, 1)).permute(0, 2, 1)
         # print(low_specxy_)
         low_specxy = torch.zeros([low_specxy_.size(0),int((self.seq_len+self.pred_len)/2+1),low_specxy_.size(2)],dtype=low_specxy_.dtype).to(low_specxy_.device)
         low_specxy[:,0:low_specxy_.size(1),:]=low_specxy_ # zero padding
