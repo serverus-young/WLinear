@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="Ytrans_2080" remoteFilesAllowedToDisappearOnAutoupload="false" showEqualInSync="true">
+  <component name="PublishConfigData" autoUpload="Always" serverName="young@192.168.1.101:22 password" remoteFilesAllowedToDisappearOnAutoupload="false" showEqualInSync="true">
     <serverData>
       <paths name="Cycle-2080">
         <serverdata>
@@ -76,6 +76,13 @@
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="young@192.168.1.101:22 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_362" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>

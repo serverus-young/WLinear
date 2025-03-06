@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="f3ebb819-ac58-4d14-b393-08d71000162c" name="Ytrans_2080">
-        <fileTransfer accessType="SFTP" host="192.168.1.105" port="22" sshConfigId="4915cf5f-a84b-4094-aa6d-0669ca4169df" sshConfig="young@192.168.1.105:22 password">
+        <fileTransfer accessType="SFTP" host="192.168.1.101" port="22" sshConfigId="437e5d4e-72f7-4964-a998-1cf838d3fe62" sshConfig="young@192.168.1.101:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
